@@ -2,8 +2,8 @@ require "bz/version"
 
 module Bz
   require 'yaml'
-  SINGLES = YAML.load_file('./bz_single.yml')
-
+  SINGLES = YAML.load_file(File.join(__dir__, 'bz_single.yml'))
+  
   class Error < StandardError; end
 
   def release_year(song)
