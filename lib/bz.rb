@@ -1,9 +1,10 @@
 require "bz/version"
 
 module Bz
-  class Error < StandardError; end
   require 'yaml'
-  SINGLES = YAML.load_file('lib/bz_single.yml')
+  SINGLES = YAML.load_file('./bz_single.yml')
+
+  class Error < StandardError; end
 
   def release_year(song)
     SINGLES.select{|i| i["title"].eql?(song)}.first["year"]
