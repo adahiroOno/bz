@@ -6,7 +6,7 @@ module Bz
   
   class Error < StandardError; end
 
-  def release_year(song)
+  def self.release_year(song)
     SINGLES.select{|i| i["title"].eql?(song)}.first["year"]
   end
 
@@ -14,7 +14,7 @@ module Bz
     SINGLES.map{ |i| i["title"] }
   end
 
-  def this_year_songs(year)
+  def self.this_year_songs(year)
     SINGLES.group_by { |i| i["year"] }[year]
   end
 end
