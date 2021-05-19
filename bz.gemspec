@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sadahiro0310@gmail.com"]
 
   spec.summary       = %q{bz}
-  spec.description   = %q{"title of b'z"}
+  spec.description   = %q{"b'z"}
   spec.homepage      = "https://github.com/adahiroOno/bz"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
