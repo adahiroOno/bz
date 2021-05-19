@@ -17,4 +17,8 @@ module Bz
   def self.this_year_songs(year)
     SINGLES.group_by { |i| i["year"] }[year]
   end
+  
+  def self.live_gym
+    puts "B'zのLIVE-GYMにようこそ～"
+  end
 end
